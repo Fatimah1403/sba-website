@@ -1,0 +1,250 @@
+body {
+    background: blue ;
+    margin: 0;
+    height: 100%;
+}
+.whole {
+    height: 50vh ;
+    width: 100%;
+    background-image: url("gadget_images/camerapx.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 50px 0 0px; /* Top Right Bottom Left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.whole a:hover {
+    color: white;
+}
+.whole a {
+    /* background: red; */
+    justify-content: center;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.whole h1, p {
+    text-align: center;
+    color: white;
+}
+#header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid red;
+
+}
+
+nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    /* background-color: white; */
+    /* justify-content: center; */
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: red;
+}
+
+/*-------carousel design------------*/
+#carouselExampleFade {
+    background:#2595E6;
+    margin-top: 20px;
+    border: 5px darkcyan dashed;
+}
+.carousel-inner img {
+  margin: 0 auto;
+  max-width: 50%;
+  height: 600px;
+  display: block;
+  /* margin-top: 20px; */
+  /* background: #2595E6; */
+
+}
+.carousel-inner button {
+    color: black;
+}
+/*-------ASIDE BAR-------*/
+.display-prod {
+    display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   align-items: flex-start;
+}
+.aside-bar {
+    /* display:flex; */
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid black;
+    /* height: 50px; */
+    height: 600px;
+    width: 20%;
+    background: #402408;
+    color: aliceblue;
+
+}
+.aside-bar aside {
+    margin-left: 20px;
+    flex: 1;
+}
+/* .card  {
+    margin-left: 100px;
+} */
+.row-cols-1.row-cols-md-3.g-4 {
+    margin-top: -100px;
+    /* align-items: flex-end; */
+    /* border-radius: 50px; */
+    background: #28218B;
+    height: 100px;
+    width: 80%;
+}
+/* .card h-100 {
+    height: 100%;
+} */
+.card-footer a {
+    border-radius: 50px;
+}
+
+.card-footer a:hover {
+    color: red;
+}
+.card li {
+    background-color: #307432;
+}
+
+
+
+
+/* --------footer --------*/
+#footer {
+    background-color:#28218B;
+    height: 500px;
+    width: 100%;
+    /* position: fixed; */
+}
+.footer-container {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0 10px;
+    row-gap: -10px
+
+    /* flex-wrap: wrap; */
+
+}
+.foot-content {
+    flex: 1;
+    /* text-align: center; */
+    padding: 0 5px;
+}
+.foot-content p {
+    flex: 1;
+    text-align: justify;
+}
+.foot-content h1 h2 {
+    font-size:medium;
+    color: white;
+}
+.foot-content ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+.foot-content a {
+    text-decoration: none;
+    color: white;
+}
+.foot-content a:hover {
+    color: red;
+}
+
+/*------------------------@media-----------------------------*/
+/* @media style for screens with a maximum width of 768px (adjust this value as needed) */
+@media (max-width: 768px) {
+    body {
+        background: blue;
+    }
+    .whole {
+        background-size: cover;
+        height: 100vh;
+        margin-top: 0;
+    }
+    .whole h1, p {
+        text-align: center;
+        color: black;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+    .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .aside-bar {
+        width: 100%;
+        height: auto;
+    }
+
+    .row-cols-1.row-cols-md-3.g-4 {
+        margin-top: 10px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto; 
+        display: block;
+        margin: 0 auto;
+    }
+
+        /*---footer-----*/
+    #footer {
+        height: auto;
+    }
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .foot-content {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .foot-content p {
+        text-align: center;
+        color: white;
+    }
+    .foot-content h1,
+    .foot-content h2 {
+        color: #50D1FA; 
+    }
+    .foot-content h2:hover {
+        color: red;
+    }
+    .foot-content h1:hover {
+        color: red;
+    }
+}
+   

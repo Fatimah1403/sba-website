@@ -1,0 +1,148 @@
+
+/*------HEADER----*/
+/* .whole h1, p {
+    text-align: center;
+    color: black;
+} */
+
+#header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid red;
+
+}
+
+nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    /* background-color: white; */
+    /* justify-content: center; */
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: red;
+}
+/*------DISPLAY PRODUCCTS--------*/
+.display-prod {
+    display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   align-items: flex-start;
+}
+.card {
+    height: 1000px;
+    width: 1000px;
+    background: black;
+}
+
+/* --------footer --------*/
+#footer {
+    background-color:#28218B;
+    height: 500px;
+    width: 100%;
+    /* position: fixed; */
+}
+.footer-container {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 0 10px;
+    row-gap: -10px
+
+    /* flex-wrap: wrap; */
+
+}
+.foot-content {
+    flex: 1;
+    /* text-align: center; */
+    padding: 0 5px;
+}
+.foot-content p {
+    flex: 1;
+    text-align: justify;
+}
+.foot-content h1 h2 {
+    font-size:medium;
+    color: white;
+}
+.foot-content ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+.foot-content a {
+    text-decoration: none;
+    color: white;
+}
+.foot-content a:hover {
+    color: red;
+}
+/***************************************************/
+/* Responsive Styles for Cart Page */
+@media (max-width: 768px) {
+    #header {
+        background-color: #333;
+        height: auto;
+        width: 100%;
+        border-bottom: 2px solid red;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+
+    /* Product Display Styles */
+    .display-prod {
+        flex-direction: column; 
+        padding: 10px; 
+        width: 100%;
+    }
+    .card {
+        width: 100%; 
+        height: auto;
+        margin-bottom: 20px; 
+    }
+     /* Footer Styles */
+    /*---footer-----*/
+    #footer {
+        height: auto;
+    }
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .foot-content {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .foot-content p {
+        text-align: center;
+        color: white;
+    }
+    .foot-content h1,
+    .foot-content h2 {
+        color: #50D1FA; 
+    }
+    .foot-content h2:hover {
+        color: red;
+    }
+    .foot-content h1:hover {
+        color: red;
+    }
+}
